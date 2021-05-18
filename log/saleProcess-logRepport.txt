@@ -1,0 +1,10 @@
+2021-05-18 14:23:10, Exception was caught: Could not found idItem:  57306978
+main.java.se.anabelandrola.saleProcess.integration.DatabaseIsNotBeCalledException: Could not found idItem:  57306978
+	at main.java.se.anabelandrola.saleProcess.integration.ItemRegistry.searchItemInventory(ItemRegistry.java:45)
+	at main.java.se.anabelandrola.saleProcess.controller.Controller.registerItem(Controller.java:70)
+	at main.java.se.anabelandrola.saleProcess.view.View.sampleProcessSaleExecution(View.java:57)
+	at main.java.se.anabelandrola.saleProcess.startup.Main.main(Main.java:27)
+Caused by: java.sql.SQLException
+	at main.java.se.anabelandrola.saleProcess.integration.ItemRegistry.connectionWithDatabase(ItemRegistry.java:91)
+	at main.java.se.anabelandrola.saleProcess.integration.ItemRegistry.searchItemInventory(ItemRegistry.java:43)
+	... 3 more
